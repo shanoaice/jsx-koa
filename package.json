@@ -1,0 +1,101 @@
+{
+  "name": "jsx-koa",
+  "version": "0.0.0",
+  "description": "Build Koa apps with JSX",
+  "keywords": [
+    "koa",
+    "jsx",
+    "framework",
+    "back-end",
+    "backend"
+  ],
+  "author": "KsRyY <andy200511@126.com>",
+  "homepage": "https://github.com/KsRyY/jsx-koa#readme",
+  "license": "BSD-3-Clause",
+  "main": "src/index.ts",
+  "directories": {
+    "dist": "dist"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KsRyY/jsx-koa.git"
+  },
+  "scripts": {
+    "watch": "tsdx watch --target node --format cjs,esm",
+    "build": "tsdx build --target node --format cjs,esm"
+  },
+  "bugs": {
+    "url": "https://github.com/KsRyY/jsx-koa/issues"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "immer": "^5.1.0"
+  },
+  "devDependencies": {
+    "@koa/router": "^8.0.5",
+    "@types/koa": "^2.11.0",
+    "@types/koa__router": "^8.0.2",
+    "@typescript-eslint/eslint-plugin": "^2.14.0",
+    "@typescript-eslint/parser": "^2.14.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-rem": "^4.0.0",
+    "eslint-config-xo-typescript": "^0.24.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^10.0.0-beta.14",
+    "prettier": "^1.19.1",
+    "tsdx": "^0.12.1",
+    "typescript": "^3.7.4",
+    "xo": "^0.25.3"
+  },
+  "xo": {
+    "extends": [
+      "xo-typescript",
+      "rem",
+      "plugin:prettier/recommended",
+      "prettier/@typescript-eslint"
+    ],
+    "ignore": [
+      "docs/sw.js"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "pascalCase": true,
+            "camelCase": true
+          }
+        }
+      ],
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "h"
+        }
+      ]
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "xo --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "peerDependencies": {
+    "koa": "^2.11.0"
+  }
+}
