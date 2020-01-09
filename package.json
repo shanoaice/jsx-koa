@@ -1,6 +1,6 @@
 {
   "name": "jsx-koa",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Build Koa apps with JSX",
   "keywords": [
     "koa",
@@ -12,7 +12,8 @@
   "author": "KsRyY <andy200511@126.com>",
   "homepage": "https://github.com/KsRyY/jsx-koa#readme",
   "license": "BSD-3-Clause",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/jsx-koa.esm.js",
   "directories": {
     "dist": "dist"
   },
@@ -20,7 +21,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "https://registry.npm.taobao.org/"
+    "registry": "https://registry.npmjs.com/"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,8 @@
   },
   "scripts": {
     "watch": "tsdx watch --target node --format cjs,esm",
-    "build": "tsdx build --target node --format cjs,esm"
+    "build": "tsdx build --target node --format cjs,esm",
+    "prepublishOnly": "npm run build"
   },
   "bugs": {
     "url": "https://github.com/KsRyY/jsx-koa/issues"
@@ -51,7 +53,7 @@
     "lint-staged": "^10.0.0-beta.14",
     "prettier": "^1.19.1",
     "tsdx": "^0.12.1",
-    "typescript": "^3.7.4",
+    "typescript": "^3.8.0-dev.20200109",
     "xo": "^0.25.3"
   },
   "xo": {
@@ -79,7 +81,8 @@
         {
           "varsIgnorePattern": "h"
         }
-      ]
+      ],
+      "import/no-named-as-default": 0
     }
   },
   "lint-staged": {
@@ -97,5 +100,8 @@
   },
   "peerDependencies": {
     "koa": "^2.11.0"
+  },
+  "resolutions": {
+    "tsdx/typescript": "^3.8.0-dev.20200109"
   }
 }
