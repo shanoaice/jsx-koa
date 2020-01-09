@@ -14,4 +14,4 @@ To learn jsx-koa, head to [Getting Started](getting-started).
 
 ## API
 
-Want to walk over the API and components exposed by jsx-koa? Head to [API Reference](api).
+Want to walk over the API and components exposed by jsx-koa? Head to [API Reference](/api/ ':ignore').
