@@ -6,12 +6,22 @@ interface ConfigProps {
   children: Array<(arg0: Koa) => void>
 }
 
-function Config({ app, children }: ConfigProps): Koa {
+const Config = function({ app, children }: ConfigProps): Koa {
   return produce(app, (imutApp: Koa) => {
     children.forEach(comp => {
       comp(imutApp)
     })
   })
+}
+
+interface ConfigUseProps {
+  children: Koa.Middleware
+}
+
+Config.Use = function({ children }: ConfigUseProps) {
+  return function(app: Koa) {
+    app.use(children)
+  }
 }
 
 export default Config

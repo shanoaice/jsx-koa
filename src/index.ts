@@ -1,11 +1,11 @@
 import { produce } from 'immer'
 import h from './h'
 import Config from './components/Config'
-import RouterComponent from './components/Router'
+import Router from './components/Router'
+import Response from './components/Response'
 
-export default {
-  produce,
-  h,
-  Config,
-  RouterComponent
-}
+export { produce }
+export { h }
+export { Config }
+export { Router }
+export { Response }

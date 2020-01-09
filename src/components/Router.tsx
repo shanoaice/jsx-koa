@@ -3,7 +3,7 @@ import * as Koa from 'koa'
 import { produce } from 'immer'
 import h from '../h'
 
-export interface RouterProps {
+interface RouterProps {
   router: KoaRouter
   getMiddleware: (arg0: KoaRouter) => KoaRouter.Middleware
   children: Array<(arg0: KoaRouter) => void>
@@ -24,7 +24,7 @@ export const Router = function({
   }
 }
 
-export interface RouteProps {
+interface RouteProps {
   getMethod: (
     arg0: KoaRouter
   ) => (path: string, ...restArg: KoaRouter.Middleware[]) => void
