@@ -7331,10 +7331,10 @@ type-fest@^0.8.1:
   resolved "https://registry.npm.taobao.org/type-fest/download/type-fest-0.8.1.tgz#09e249ebde851d3b1e48d27c105444667f17b83d"
   integrity sha1-CeJJ696FHTseSNJ8EFREZn8XuD0=
 
-typescript@^3.7.3, typescript@^3.7.4:
-  version "3.7.4"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.7.4.tgz?cache=0&sync_timestamp=1578122334123&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.7.4.tgz#1743a5ec5fef6a1fa9f3e4708e33c81c73876c19"
-  integrity sha1-F0Ol7F/vah+p8+RwjjPIHHOHbBk=
+typescript@^3.7.3, typescript@^3.8.0-dev.20200109:
+  version "3.8.0-dev.20200109"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.8.0-dev.20200109.tgz#9411437dc0659c0587c9156be2675b76202e971b"
+  integrity sha1-lBFDfcBlnAWHyRVr4mdbdiAulxs=
 
 uglify-js@^3.1.4:
   version "3.7.3"
