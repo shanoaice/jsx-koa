@@ -1,6 +1,6 @@
 {
   "name": "jsx-koa",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Build Koa apps with JSX",
   "keywords": [
     "koa",
