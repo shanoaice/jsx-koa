@@ -1,9 +1,5 @@
 {
-  "include": [
-    "src",
-    "types",
-    "test"
-  ],
+  "include": ["src", "types", "test"],
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
@@ -31,5 +27,6 @@
     "jsx": "react",
     "esModuleInterop": true,
     "jsxFactory": "h"
-  }
+  },
+  "exclude": ["docs", "demo"]
 }

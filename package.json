@@ -60,7 +60,8 @@
       "prettier/@typescript-eslint"
     ],
     "ignore": [
-      "docs/sw.js"
+      "docs/sw.js",
+      "demo/**/*.{js,jsx}"
     ],
     "rules": {
       "unicorn/filename-case": [
