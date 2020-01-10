@@ -14,11 +14,8 @@
   "license": "BSD-3-Clause",
   "main": "dist/index.js",
   "module": "dist/jsx-koa.esm.js",
-  "directories": {
-    "dist": "dist"
-  },
   "files": [
-    "lib"
+    "dist"
   ],
   "publishConfig": {
     "registry": "https://registry.npmjs.com/"
@@ -36,7 +33,6 @@
     "url": "https://github.com/KsRyY/jsx-koa/issues"
   },
   "dependencies": {
-    "esm": "^3.2.25",
     "immer": "^5.1.0"
   },
   "devDependencies": {
